@@ -9,73 +9,100 @@
   nav {
     display: flex;
   }
-  .services.container{
+  .services.container {
     padding: 50px 15px;
   }
- 
+  .portfolio-slides .swiper-slide img {
+    width: 100%;
+    display: block;
   }
-  @media all and (max-width: 1042px) {
-    .portfolioSwiper{
-      width: 90%;
-    }
-
+}
+@media all and (max-width: 1042px) {
+  .portfolioSwiper {
+    width: 90%;
   }
+}
 @media all and (max-width: 520px) {
   .main-menu li {
     margin-right: 10px;
   }
 }
-@media all and (max-width: 768px){
-  .portfolioSwiper{
+@media all and (max-width: 768px) {
+  .portfolio-slides {
     width: 80%;
+  }
+}
+@media all and (max-width: 480px) {
+  .portfolio-slides {
+    width: 60%;
+  }
+  .swiper-slide img {
+    width: 100%;
+  }
+  .swiper-slide .caption {
+    width: 100%;
+  }
+  .contents {
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
 @media all and (max-width: 410px) {
   .main-menu {
     display: none;
   }
-  .menu-toggle-btn{
+  .menu-toggle-btn {
     display: block;
+  }
+  .portfolioSwiper {
+    width: 80%;
   }
 }
 @media all and (max-width: 320px) {
   /* ===============feature */
-  .feature .container{
+  .feature .container {
     padding: 0;
   }
-  .feature-list{
+  .feature-list {
     flex-direction: column;
     background: none;
   }
-  .feature-list .item{
+  .feature-list .item {
     height: 120px;
     justify-content: flex-start;
     flex: none;
     padding-left: 15px;
-background: url("../images/feature_bg.jpg")no-repeat left top;
-border-right: none;
-
+    background: url("../images/feature_bg.jpg") no-repeat left top;
+    border-right: none;
   }
-  .feature-list .item a{
+  .feature-list .item a {
     display: flex;
     align-items: center;
     gap: 20px;
   }
-  .feature-list .item:nth-child(1){
+  .feature-list .item:nth-child(1) {
     border-left: none;
   }
-  .feature-list .item:nth-child(2){
+  .feature-list .item:nth-child(2) {
     background-position: center center;
   }
-  .feature-list .item:nth-child(3){
+  .feature-list .item:nth-child(3) {
     background-position: bottom right;
   }
   /* ============ services*/
-  .services.container{
+  .services.container {
     padding: 50px 15px;
   }
-  .contents{
+  .contents {
     flex-wrap: wrap;
     gap: 20px;
+  }
+  /* footer */
+  .footer-top {
+    flex-direction: column;
+    padding: 40px 10px;
+  }
+  .copyright {
+    margin-top: 10px;
   }
 }
