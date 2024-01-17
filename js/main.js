@@ -6,8 +6,8 @@ $(document).ready(function () {
     spaceBetween: 30,
     // navigation
     navigation: {
-      nextEl: ".portfolioSwiper .next",
-      prevEl: ".portfolioSwiper .prev",
+      nextEl: ".portfolio-slider-wrap .next",
+      prevEl: ".portfolio-slider-wrap .prev",
     },
     breakpoints: {
       //320 이상일때
@@ -21,9 +21,15 @@ $(document).ready(function () {
       },
       //768 이상일때
       768: {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 30,
       },
     },
   });
+  // 토글 버튼 코드
+  var menuToggleBtn = $(".menu-toggle-btn")
+  mainMenu = $(".main-menu1")
+  menuToggleBtn.click(function(){
+    mainMenu.slideToggle()
+  })
 });

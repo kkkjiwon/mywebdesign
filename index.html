@@ -3,22 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- 사용자에게 검색결과를 표시할때 활용 -->
+    <!-- seo적용 -->
+    <!-- 사용자에게 검색결과에 표시할때 활용 -->
     <meta
       name="description"
       content="portfolio site for webdesign, publishing, development"
     />
-    <!-- 웹페이지와 관련된 키워드 정의 -->
+    <!-- 웹페이지와 관련된 키워드를 정의 -->
     <meta name="keywords" content="web designer, publisher, developer" />
-    <!-- CSS -->
-    <!-- 폰트어썸 CDN -->
+    <!-- css -->
+    <!-- font-aweaome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
-    <!-- 스와이퍼 적용 -->
+    <!-- 스와퍼적용 -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -26,8 +27,8 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <!-- JS 적용 -->
-    <!-- Jquery 적용 -->
+    <!-- js적용 -->
+    <!-- jquery적용 -->
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -38,16 +39,24 @@
   <body>
     <header>
       <!-- 메뉴 -->
+
       <nav class="container">
         <button class="menu-toggle-btn">
           <i class="fas fa-bars"></i>
         </button>
         <ul class="main-menu">
           <li><a href="#">home</a></li>
-          <li><a href="#">WORK</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">work</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
         </ul>
+        <ul class="main-menu1">
+          <li><a href="#">home</a></li>
+          <li><a href="#">work</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+
         <ul class="social-menu">
           <li>
             <a href=""><i class="fab fa-instagram"></i></a>
@@ -61,7 +70,6 @@
         </ul>
       </nav>
     </header>
-    <!-- 타이틀 -->
     <div class="header-bottom">
       <h1>My Design Portfolio</h1>
       <h2>Design solutions for Your besiness</h2>
@@ -77,19 +85,19 @@
         </li>
         <li class="item">
           <a href="#">
-            <img src="images/feature_icon_graphic.png" alt="웹그래픽" />
+            <img src="images/feature_icon_graphic.png" alt="웹아이콘" />
             <h3>graphic design</h3>
           </a>
         </li>
         <li class="item">
           <a href="#">
-            <img src="images/feature_icon_video.png" alt="웹비디오" />
+            <img src="images/feature_icon_video.png" alt="웹아이콘" />
             <h3>video design</h3>
           </a>
         </li>
       </ul>
     </section>
-    <!-- portfolio -->
+    <!-- services -->
     <section class="services container">
       <h1>Design Services</h1>
       <div class="contents">
@@ -145,17 +153,22 @@
                 </div>
               </li>
             </ul>
-            <!--//swiper wrapper-->
-            <div class="controls">
-              <span class="prev"><i class="fas fa-chevron-left"></i></span>
-              <span class="next"><i class="fas fa-chevron-right"></i></span>
-            </div>
+            
             <!-- <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-          </div> -->
+            <div class="swiper-pagination"></div> -->
+          </div>
+          <!--//swiper-wrapper-->
+          <div class="controls">
+            <span class="prev"><i class="fas fa-chevron-left"></i></span>
+            <span class="next"><i class="fas fa-chevron-right"></i></span>
+          </div>
         </div>
+        <!-- swiper끝 -->
         <!-- more -->
+        <p class="read-more">
+          <a href="#" class="btn">More portfolio</a>
+        </p>
       </div>
     </section>
   </body>
